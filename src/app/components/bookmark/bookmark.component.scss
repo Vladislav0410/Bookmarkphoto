@@ -1,0 +1,20 @@
+img {
+  object-fit: fill;
+  height: calc(100vh - 450px);
+}
+.noImage {
+  margin-top: 40vh;
+  text-align: center;
+  font-size: 50px;
+}
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  overflow-y: auto;
+  height: calc(100vh - 135px);
+}
+.card {
+  padding: 35px 35px 20px 35px;
+  border: 5px black solid;
+}

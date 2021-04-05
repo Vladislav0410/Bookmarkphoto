@@ -1,0 +1,47 @@
+<div class="body">
+  <div class="header">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <span>Image Finder</span>
+        <span class="example-spacer"></span>
+        <img
+          style="height: 35px"
+          src="https://cdn.iconscout.com/icon/free/png-512/account-269-866236.png"
+        />
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+  <div class="main">
+    <div>
+      <div class="search">
+        <div
+          class="material-icons"
+          [class.selected]="!tab"
+          (click)="selectPage('search')"
+        >
+          cloud
+        </div>
+      </div>
+      <div class="bookmark">
+        <div
+          class="material-icons"
+          [class.selected]="tab"
+          (click)="selectPage('bookmark')"
+        >
+          photo_library
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <app-search-images *ngIf="!tab"></app-search-images>
+      <app-bookmark *ngIf="tab"></app-bookmark>
+    </div>
+  </div>
+  <div class="footer">
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <span>Copyrights</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</div>

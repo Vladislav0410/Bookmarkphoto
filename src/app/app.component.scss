@@ -1,0 +1,50 @@
+.body {
+  overflow: hidden;
+  height: 100%;
+}
+.material-icons {
+  font-size: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.main {
+  position: relative;
+  top: 70px;
+  margin-left: 20px;
+  margin-right: 10px;
+  display: flex;
+}
+
+.content {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.bookmark {
+  cursor: pointer;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.selected {
+  border: 3px black solid;
+}

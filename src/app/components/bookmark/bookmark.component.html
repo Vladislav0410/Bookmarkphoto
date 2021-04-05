@@ -1,0 +1,18 @@
+<p class="noImage" *ngIf="data.length == 0">No bookmarks</p>
+<div class="rows">
+  <div *ngFor="let image of data">
+    <mat-card class="card">
+      <img
+        mat-card-image
+        src="{{ image.url }}_m.jpg"
+        title="{{ image.title }}"
+        alt="Image not found"
+      />
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="remoteImage(image)">
+          Remote it!
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
